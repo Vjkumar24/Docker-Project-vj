@@ -1,0 +1,8 @@
+version: '3'
+services:
+  movies:
+    image: vjkumar24/moviesservice:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
