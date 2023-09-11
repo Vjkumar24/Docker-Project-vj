@@ -1,29 +1,8 @@
 version: '3'
 services:
   movies:
-    image: vjkumar24/moviesservice:latest
+    image: vjkumar24/movie-website:latest
     ports:
       - "81:80"
-    deploy:
-      replicas: 3
-  
-  train:
-    image: vjkumar24/trainservice:latest
-    ports:
-      - "82:80"
-    deploy:
-      replicas: 3
-
-  dth:
-    image: vjkumar24/dthservice:latest
-    ports:
-      - "83:80"
-    deploy:
-      replicas: 3
-
-  recharge:
-    image: vjkumar24/rechargeservice:latest
-    ports:
-      - "84:80"
     deploy:
       replicas: 3
