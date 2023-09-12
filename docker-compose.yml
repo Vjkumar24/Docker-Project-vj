@@ -1,7 +1,7 @@
 version: '3'
 services:
   movies:
-    image: vjkumar24/movie-website:latest
+    image: vjkumar24/moviewebsite:latest
     ports:
       - "81:80"
     deploy:
