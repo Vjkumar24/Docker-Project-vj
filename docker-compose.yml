@@ -1,8 +1,8 @@
 version: '3'
 services:
-  movies:
-    image: vjkumar24/moviewebsite:latest
+  voter:
+    image: vjkumar24/voterservice:latest
     ports:
-      - "81:80"
+      - "80:80"
     deploy:
       replicas: 3
