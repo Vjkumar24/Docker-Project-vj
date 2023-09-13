@@ -6,3 +6,10 @@ services:
       - "80:80"
     deploy:
       replicas: 3
+
+  resume:
+    image: vjkumar24/resumeservice:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3  
